@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btVoltar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Voltar" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Escolha um Nível" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btNivel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="Nível 1" />
+
+        <Button
+            android:id="@+id/btNivel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btNivel1"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="Nível 2" />
+
+        <Button
+            android:id="@+id/btNivel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btNivel2"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="Nível 3" />
+
+        <Button
+            android:id="@+id/btNivel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btNivel3"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="Nível 4" />
+    </RelativeLayout>
+
+</RelativeLayout>
