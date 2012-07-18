@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btVoltar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Voltar" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Ajuda" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/Ajuda"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="What&apos;s The Logo é um jogo onde o objetivo é acertar os nomes de cada LOGO que aparece na tela para avançar de nível.\n\nAo acertar um nome na primeira vez, o jogador receberá 1.000 pontos. A cada erro, será descontado 100 pontos da pontuação para aquele LOGO. Ou seja, caso o jogador acerte na 3ª tentativa, ele receberá apenas 700 pontos.\n\nA cada resposta correta, o jogador receberá um crédito para pedir uma dica. Isso ajudará com que ele não erre muito e termine sem marcar pontos em uma LOGO que tem dúvida.\n\n\n\nDesenvolvido por:\nJansepetrus Brasileiro Pereira\nE-mail:\njansebp [at] gmail.com" />
+    </ScrollView>
+
+</RelativeLayout>
